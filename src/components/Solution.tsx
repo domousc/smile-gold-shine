@@ -22,7 +22,7 @@ const Solution = () => {
   return (
     <section className="py-20 px-4">
       <div className="container max-w-6xl">
-        <h2 className="text-3xl md:text-4xl text-center mb-16">
+        <h2 className="text-3xl md:text-4xl text-center mb-16 font-bold">
           Com este curso, você vai...
         </h2>
         
@@ -30,13 +30,13 @@ const Solution = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="text-center space-y-4 p-8 rounded-xl hover:bg-secondary/50 transition-smooth"
+              className="text-center space-y-4 p-8 rounded-xl bg-card border border-border hover:border-gold/50 transition-smooth"
             >
-              <div className="inline-flex w-16 h-16 rounded-full bg-gradient-to-br from-gold to-gold-dark items-center justify-center shadow-gold">
-                <benefit.icon className="w-8 h-8 text-primary" />
+              <div className="inline-flex w-16 h-16 rounded-full gradient-gold items-center justify-center shadow-gold">
+                <benefit.icon className="w-8 h-8 text-primary-foreground" />
               </div>
-              <h3 className="text-2xl font-semibold">{benefit.title}</h3>
-              <p className="text-lg text-muted-foreground">{benefit.description}</p>
+              <h3 className="text-xl font-semibold">{benefit.title}</h3>
+              <p className="text-base text-muted-foreground">{benefit.description}</p>
             </div>
           ))}
         </div>

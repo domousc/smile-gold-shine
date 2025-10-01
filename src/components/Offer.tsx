@@ -9,16 +9,16 @@ const Offer = () => {
   ];
 
   return (
-    <section id="oferta" className="py-20 px-4 bg-gradient-to-b from-background to-gold-light/10">
+    <section id="oferta" className="py-20 px-4">
       <div className="container max-w-4xl">
         <div className="text-center space-y-8">
-          <h2 className="text-3xl md:text-4xl">
+          <h2 className="text-3xl md:text-4xl font-bold">
             Tudo isso por apenas
           </h2>
           
           <div className="relative inline-block">
-            <div className="absolute inset-0 bg-gold/20 blur-3xl rounded-full" />
-            <div className="relative bg-gradient-to-br from-gold-dark to-gold text-primary rounded-2xl p-8 shadow-gold">
+            <div className="absolute inset-0 bg-gold/30 blur-3xl rounded-full" />
+            <div className="relative gradient-gold text-primary-foreground rounded-2xl p-8 shadow-gold border border-gold">
               <p className="text-6xl md:text-7xl font-bold">R$ 49</p>
             </div>
           </div>
@@ -27,12 +27,12 @@ const Offer = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="flex items-center gap-3 p-4 bg-background rounded-lg shadow-elegant"
+                className="flex items-center gap-3 p-4 bg-card rounded-lg border border-border"
               >
                 <div className="flex-shrink-0 w-10 h-10 rounded-full bg-gold/10 flex items-center justify-center">
-                  <benefit.icon className="w-5 h-5 text-gold-dark" />
+                  <benefit.icon className="w-5 h-5 text-gold" />
                 </div>
-                <p className="text-left">{benefit.text}</p>
+                <p className="text-left text-foreground">{benefit.text}</p>
               </div>
             ))}
           </div>

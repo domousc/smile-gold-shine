@@ -2,34 +2,37 @@ import draBethania from "@/assets/dra-bethania.jpg";
 
 const Authority = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-gold-light/10 to-background">
-      <div className="container max-w-5xl">
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="order-2 md:order-1">
-            <img
-              src={draBethania}
-              alt="Dra. Bethânia Luna"
-              className="rounded-2xl shadow-elegant w-full"
-            />
-          </div>
-          
-          <div className="order-1 md:order-2 space-y-6">
-            <div className="inline-block px-4 py-2 bg-gold/10 rounded-full">
-              <p className="text-sm font-semibold text-gold-dark">
-                SOBRE A INSTRUTORA
+    <section className="py-20 px-4">
+      <div className="container max-w-6xl">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Content Column */}
+          <div className="space-y-6">
+            <h2 className="text-3xl md:text-4xl font-bold">
+              Conheça a Dra. Bethânia Luna
+            </h2>
+            <div className="space-y-4 text-base text-muted-foreground">
+              <p>
+                Sou a Dra. Bethânia Luna, especialista em odontologia estética com anos de experiência transformando sorrisos.
+              </p>
+              <p>
+                Já transformei centenas de sorrisos com resina composta e agora vou mostrar como você também pode aplicar essa técnica de forma rápida, segura e lucrativa.
+              </p>
+              <p>
+                Minha missão é compartilhar conhecimento prático que realmente funciona no dia a dia do consultório.
               </p>
             </div>
-            
-            <h2 className="text-3xl md:text-4xl">
-              Dra. Bethânia Luna
-            </h2>
-            
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              Sou a Dra. Bethânia Luna, especialista em odontologia estética. 
-              Já transformei centenas de sorrisos com resina composta e agora 
-              vou mostrar como você também pode aplicar essa técnica de forma 
-              rápida, segura e lucrativa.
-            </p>
+          </div>
+
+          {/* Image Column */}
+          <div className="flex justify-center lg:justify-end">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gold/10 rounded-2xl blur-3xl" />
+              <img
+                src={draBethania}
+                alt="Dra. Bethânia Luna no consultório"
+                className="relative rounded-2xl shadow-gold w-full max-w-md object-cover border border-gold/20"
+              />
+            </div>
           </div>
         </div>
       </div>

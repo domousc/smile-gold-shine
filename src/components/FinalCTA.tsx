@@ -6,9 +6,9 @@ const FinalCTA = () => {
   };
 
   return (
-    <section className="py-20 px-4 bg-primary text-primary-foreground">
+    <section className="py-20 px-4 bg-card border-y border-border">
       <div className="container max-w-4xl text-center space-y-8">
-        <h2 className="text-3xl md:text-4xl text-gold">
+        <h2 className="text-3xl md:text-4xl text-gold font-bold">
           Essa é a sua chance de transformar seus resultados com um investimento menor do que o valor de uma consulta.
         </h2>
         

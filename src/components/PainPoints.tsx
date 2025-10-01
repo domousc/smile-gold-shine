@@ -21,9 +21,9 @@ const PainPoints = () => {
   ];
 
   return (
-    <section className="py-20 px-4 bg-secondary/30">
+    <section className="py-20 px-4">
       <div className="container max-w-4xl">
-        <h2 className="text-3xl md:text-4xl text-center mb-12">
+        <h2 className="text-3xl md:text-4xl text-center mb-12 font-bold">
           Você já passou por isso?
         </h2>
         
@@ -31,12 +31,12 @@ const PainPoints = () => {
           {pains.map((pain, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 p-6 bg-background rounded-lg shadow-elegant hover:shadow-gold transition-smooth"
+              className="flex items-start gap-4 p-6 bg-card rounded-lg border border-border shadow-elegant hover:border-gold/50 transition-smooth"
             >
               <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gold/10 flex items-center justify-center">
-                <pain.icon className="w-6 h-6 text-gold-dark" />
+                <pain.icon className="w-6 h-6 text-gold" />
               </div>
-              <p className="text-lg">{pain.text}</p>
+              <p className="text-base text-foreground">{pain.text}</p>
             </div>
           ))}
         </div>
