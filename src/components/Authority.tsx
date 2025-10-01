@@ -7,18 +7,28 @@ const Authority = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Content Column */}
           <div className="space-y-6">
+            <div className="inline-block px-4 py-2 bg-gold/10 rounded-full border border-gold/30">
+              <p className="text-sm font-semibold text-gold">
+                SOBRE A INSTRUTORA
+              </p>
+            </div>
+            
             <h2 className="text-3xl md:text-4xl font-bold">
-              Conheça a Dra. Bethânia Luna
+              Dra. Bethânia Luna
             </h2>
-            <div className="space-y-4 text-base text-muted-foreground">
+            
+            <div className="space-y-4 text-base text-muted-foreground leading-relaxed">
               <p>
-                Sou a Dra. Bethânia Luna, especialista em odontologia estética com anos de experiência transformando sorrisos.
+                Referência em odontologia estética com mais de 10 anos de experiência transformando sorrisos através da resina composta.
               </p>
               <p>
-                Já transformei centenas de sorrisos com resina composta e agora vou mostrar como você também pode aplicar essa técnica de forma rápida, segura e lucrativa.
+                Já realizou centenas de procedimentos de fechamento de diastema com resultados comprovados e pacientes satisfeitos.
+              </p>
+              <p className="text-foreground font-semibold italic border-l-4 border-gold pl-4">
+                "Não é teoria. É prática real de consultório, do jeito que realmente funciona no dia a dia."
               </p>
               <p>
-                Minha missão é compartilhar conhecimento prático que realmente funciona no dia a dia do consultório.
+                Minha missão é compartilhar conhecimento técnico aplicável imediatamente, para que você domine a técnica com segurança e lucre com ela.
               </p>
             </div>
           </div>

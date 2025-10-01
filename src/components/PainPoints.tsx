@@ -4,19 +4,27 @@ const PainPoints = () => {
   const pains = [
     {
       icon: AlertCircle,
-      text: "Insegurança ao oferecer fechamentos estéticos por não dominar a técnica",
+      text: "Frustração de perder pacientes para colegas que oferecem procedimentos estéticos com segurança",
     },
     {
       icon: TrendingDown,
-      text: "Medo de perder pacientes por não entregar o resultado que eles esperam",
+      text: "Dúvida se está cobrando barato demais por não dominar técnicas avançadas de estética",
     },
     {
       icon: Users,
-      text: "Sentir que outros colegas estão avançando e faturando mais",
+      text: "Medo de errar na execução e prejudicar a confiança do paciente no seu trabalho",
     },
     {
       icon: DollarSign,
-      text: "Não conseguir cobrar de forma justa por falta de confiança",
+      text: "Sentir que está deixando dinheiro na mesa ao recusar casos de fechamento de diastema",
+    },
+    {
+      icon: AlertCircle,
+      text: "Insegurança ao oferecer orçamentos de estética sem saber se conseguirá entregar o resultado esperado",
+    },
+    {
+      icon: TrendingDown,
+      text: "Ver colegas faturando mais com procedimentos simples que você ainda não domina",
     },
   ];
 

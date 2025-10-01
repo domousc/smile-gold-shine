@@ -1,21 +1,26 @@
-import { BookOpen, Lightbulb, TrendingUp } from "lucide-react";
+import { BookOpen, Lightbulb, TrendingUp, DollarSign } from "lucide-react";
 
 const Solution = () => {
   const benefits = [
     {
-      icon: BookOpen,
-      title: "Dominar a técnica",
-      description: "Passo a passo de fechamento de diastema com resina",
+      icon: DollarSign,
+      title: "Aumentar seu faturamento",
+      description: "Cobre de R$800 a R$2.500 por procedimento. Procedimentos rápidos e altamente valorizados que aumentam sua receita mensal.",
     },
     {
-      icon: Lightbulb,
-      title: "Ganhar experiência real",
-      description: "Exemplos práticos e diretos ao ponto",
+      icon: BookOpen,
+      title: "Segurança na execução",
+      description: "Aprenda o passo a passo completo sem improviso. Execute com confiança e previsibilidade de resultado desde o primeiro paciente.",
     },
     {
       icon: TrendingUp,
-      title: "Aumentar faturamento",
-      description: "Agregar valor estético e cobrar mais por procedimentos simples",
+      title: "Diferenciação profissional",
+      description: "Seja reconhecido como especialista em estética. Atraia mais pacientes e construa autoridade no mercado odontológico.",
+    },
+    {
+      icon: Lightbulb,
+      title: "Retorno imediato",
+      description: "Aplique já no dia seguinte ao curso. Recupere seu investimento com apenas 1 procedimento realizado.",
     },
   ];
 
@@ -26,17 +31,17 @@ const Solution = () => {
           Com este curso, você vai...
         </h2>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="text-center space-y-4 p-8 rounded-xl bg-card border border-border hover:border-gold/50 transition-smooth"
+              className="text-center space-y-4 p-8 rounded-xl bg-card border border-border hover:border-gold/50 transition-smooth hover-scale"
             >
               <div className="inline-flex w-16 h-16 rounded-full gradient-gold items-center justify-center shadow-gold">
                 <benefit.icon className="w-8 h-8 text-primary-foreground" />
               </div>
               <h3 className="text-xl font-semibold">{benefit.title}</h3>
-              <p className="text-base text-muted-foreground">{benefit.description}</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">{benefit.description}</p>
             </div>
           ))}
         </div>

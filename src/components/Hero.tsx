@@ -28,10 +28,10 @@ const Hero = () => {
           <div className="order-1 lg:order-2 text-center lg:text-left space-y-8">
             <div className="space-y-6">
               <h1 className="text-4xl md:text-5xl lg:text-6xl leading-tight font-bold">
-                Transforme sorrisos e aumente seus resultados: aprenda fechamento de diastema com resina, do jeito certo.
+                Domine o fechamento de diastema com resina e cobre até 3x mais por cada sorriso transformado
               </h1>
-              <p className="text-lg md:text-xl text-muted-foreground">
-                Curso prático e acessível para dentistas que querem dominar uma técnica simples, lucrativa e cada vez mais procurada.
+              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                Aprenda a técnica estética mais procurada pelos pacientes, ganhe autoridade no mercado e aumente seu faturamento com procedimentos rápidos e altamente valorizados.
               </p>
             </div>
 
@@ -39,7 +39,7 @@ const Hero = () => {
               variant="gold" 
               size="xl" 
               onClick={scrollToOffer}
-              className="w-full sm:w-auto"
+              className="w-full sm:w-auto animate-pulse hover:animate-none"
             >
               Quero garantir meu acesso por apenas R$49
             </Button>
