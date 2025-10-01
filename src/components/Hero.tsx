@@ -37,7 +37,7 @@ const Hero = () => {
               variant="gold" 
               size="lg" 
               onClick={scrollToOffer}
-              className="w-full sm:w-auto animate-pulse hover:animate-none text-sm sm:text-base"
+              className="w-full sm:w-auto animate-pulse hover:animate-none text-xs sm:text-sm md:text-base px-4 sm:px-6 py-3 sm:py-4 whitespace-normal sm:whitespace-nowrap leading-tight"
             >
               Quero garantir meu acesso por apenas R$49
             </Button>
