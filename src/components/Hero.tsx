@@ -7,7 +7,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[600px] md:min-h-screen flex items-center justify-center px-4 py-12 md:py-16 lg:py-20 overflow-hidden">
+    <section className="relative flex items-center justify-center px-4 pt-16 pb-12 md:py-20 lg:min-h-screen overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-gold/5 to-background -z-10" />
       
       <div className="container max-w-6xl">
