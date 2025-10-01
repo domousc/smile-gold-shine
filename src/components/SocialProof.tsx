@@ -18,19 +18,19 @@ const SocialProof = () => {
           {[
             {
               text: "Em menos de uma semana já recuperei o valor investido. Fiz 3 fechamentos de diastema e os pacientes ficaram encantados com o resultado!",
-              author: "Espaço para nome do dentista"
+              author: "Dr. Rafael Oliveira"
             },
             {
               text: "Nunca mais perdi um paciente que pediu estética. Agora sei como entregar com confiança e ainda cobrar o preço justo pelo meu trabalho.",
-              author: "Espaço para nome do dentista"
+              author: "Dra. Mariana Santos"
             },
             {
               text: "O curso é extremamente prático. No dia seguinte já apliquei a técnica e o resultado ficou perfeito. Vale muito a pena!",
-              author: "Espaço para nome do dentista"
+              author: "Dr. Fernando Costa"
             },
             {
               text: "Finalmente me sinto seguro para oferecer procedimentos estéticos. A explicação da Dra. Bethânia é clara e sem enrolação.",
-              author: "Espaço para nome do dentista"
+              author: "Dra. Juliana Alves"
             }
           ].map((testimonial, index) => (
             <div

@@ -5,7 +5,7 @@ const Solution = () => {
     {
       icon: DollarSign,
       title: "Aumentar seu faturamento",
-      description: "Cobre de R$800 a R$2.500 por procedimento. Procedimentos rápidos e altamente valorizados que aumentam sua receita mensal.",
+      description: "Cobre até 3x à mais pelo procedimento de fechamento de diastema com resina, com técnicas que deixa natural. Procedimentos rápidos e altamente valorizados que aumentam sua receita mensal.",
     },
     {
       icon: BookOpen,
