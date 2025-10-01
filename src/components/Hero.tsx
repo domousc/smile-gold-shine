@@ -13,8 +13,8 @@ const Hero = () => {
       <div className="container max-w-6xl">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Image Column */}
-          <div className="order-2 lg:order-1 flex justify-center">
-            <div className="relative w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg">
+          <div className="order-2 lg:order-1 flex justify-center lg:justify-start">
+            <div className="relative w-full max-w-[240px] sm:max-w-[280px] md:max-w-md lg:max-w-lg">
               <div className="absolute inset-0 bg-gold/10 rounded-2xl blur-3xl" />
               <img
                 src={draBethania}
@@ -25,19 +25,19 @@ const Hero = () => {
           </div>
 
           {/* Content Column */}
-          <div className="order-1 lg:order-2 text-center lg:text-left space-y-6 md:space-y-8">
-            <div className="space-y-4 md:space-y-6">
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl leading-tight font-bold">
+          <div className="order-1 lg:order-2 text-center lg:text-left space-y-4 md:space-y-6">
+            <div className="space-y-3 md:space-y-4">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl leading-tight font-bold">
                 Domine o fechamento de diastema com resina e cobre até 3x mais por cada sorriso transformado
               </h1>
-              <p className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed">
                 Aprenda a técnica estética mais procurada pelos pacientes, ganhe autoridade no mercado e aumente seu faturamento com procedimentos rápidos e altamente valorizados.
               </p>
             </div>
 
             <Button 
               variant="gold" 
-              size="xl" 
+              size="lg" 
               onClick={scrollToOffer}
               className="w-full sm:w-auto animate-pulse hover:animate-none text-sm sm:text-base"
             >
