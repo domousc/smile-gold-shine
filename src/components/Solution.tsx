@@ -1,6 +1,11 @@
 import { BookOpen, Lightbulb, TrendingUp, DollarSign } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Solution = () => {
+  const scrollToOffer = () => {
+    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   const benefits = [
     {
       icon: DollarSign,
@@ -44,6 +49,22 @@ const Solution = () => {
               <p className="text-sm text-muted-foreground leading-relaxed">{benefit.description}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center space-y-4">
+          <p className="text-xl font-semibold text-foreground">
+            Tudo isso por apenas R$49
+          </p>
+          <Button 
+            variant="gold" 
+            size="xl"
+            onClick={scrollToOffer}
+          >
+            Sim, quero esses resultados
+          </Button>
+          <p className="text-sm text-muted-foreground">
+            Acesso imediato • Certificado incluso
+          </p>
         </div>
       </div>
     </section>

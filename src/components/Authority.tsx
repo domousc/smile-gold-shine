@@ -1,8 +1,13 @@
 import draBethania from "@/assets/dra-bethania.jpg";
 import bethaniaSpeaking from "@/assets/bethania-speaking.jpg";
 import { Award, Users, Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Authority = () => {
+  const scrollToOffer = () => {
+    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="py-20 px-4">
       <div className="container max-w-6xl">
@@ -73,6 +78,21 @@ const Authority = () => {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className="mt-12 text-center">
+          <div className="inline-block bg-gold/10 border border-gold/30 rounded-xl px-6 py-8 max-w-2xl">
+            <p className="text-lg font-semibold text-foreground mb-4">
+              Aprenda diretamente com quem já fez milhares de vezes
+            </p>
+            <Button 
+              variant="gold" 
+              size="lg"
+              onClick={scrollToOffer}
+            >
+              Quero aprender com a Dra. Bethânia
+            </Button>
           </div>
         </div>
       </div>

@@ -1,6 +1,11 @@
 import { AlertCircle, TrendingDown, Users, DollarSign } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const PainPoints = () => {
+  const scrollToOffer = () => {
+    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   const pains = [
     {
       icon: AlertCircle,
@@ -47,6 +52,20 @@ const PainPoints = () => {
               <p className="text-base text-foreground">{pain.text}</p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-12 text-center space-y-4">
+          <p className="text-lg text-muted-foreground">
+            Chegou a hora de deixar essas inseguranças para trás
+          </p>
+          <Button 
+            variant="gold" 
+            size="lg"
+            onClick={scrollToOffer}
+            className="text-base"
+          >
+            Quero dominar a técnica agora
+          </Button>
         </div>
       </div>
     </section>

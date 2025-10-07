@@ -1,6 +1,11 @@
 import { Clock, Play, Zap, TrendingUp } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const Timeline = () => {
+  const scrollToOffer = () => {
+    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   const steps = [
     {
       icon: Play,
@@ -75,12 +80,20 @@ const Timeline = () => {
           })}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center space-y-6">
           <div className="inline-block bg-gold/10 border border-gold/30 rounded-xl px-6 py-4">
             <p className="text-sm font-semibold text-gold">
               ⚡ O tempo entre você e seus primeiros R$1.500 extras? Apenas 48 horas.
             </p>
           </div>
+          <Button 
+            variant="gold" 
+            size="xl"
+            onClick={scrollToOffer}
+            className="shadow-elegant"
+          >
+            Começar minha jornada agora
+          </Button>
         </div>
       </div>
     </section>

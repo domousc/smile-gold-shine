@@ -1,7 +1,12 @@
 import beforeAfter1 from "@/assets/before-after-1.jpg";
 import { Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const BeforeAfter = () => {
+  const scrollToOffer = () => {
+    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-card to-background">
       <div className="container max-w-6xl">
@@ -42,6 +47,19 @@ const BeforeAfter = () => {
           <p className="text-sm text-muted-foreground leading-relaxed">
             <span className="text-gold font-semibold">Essas transformações foram feitas com facetas</span>, mas a técnica de fechamento de diastema que você vai aprender no curso usa os <span className="font-semibold">mesmos princípios, materiais e protocolos estéticos</span> que garantem resultados naturais e duradouros.
           </p>
+        </div>
+
+        <div className="mt-12 text-center space-y-4">
+          <p className="text-xl text-foreground font-semibold">
+            Você também pode entregar essas transformações
+          </p>
+          <Button 
+            variant="gold" 
+            size="xl"
+            onClick={scrollToOffer}
+          >
+            Quero transformar sorrisos assim
+          </Button>
         </div>
       </div>
     </section>

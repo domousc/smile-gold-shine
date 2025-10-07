@@ -1,6 +1,11 @@
 import { Quote } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const SocialProof = () => {
+  const scrollToOffer = () => {
+    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-background to-card">
       <div className="container max-w-6xl">
@@ -48,6 +53,19 @@ const SocialProof = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="text-center space-y-4">
+          <p className="text-lg text-foreground font-semibold">
+            Junte-se aos dentistas que já estão faturando mais
+          </p>
+          <Button 
+            variant="gold" 
+            size="lg"
+            onClick={scrollToOffer}
+          >
+            Garantir minha vaga agora
+          </Button>
         </div>
       </div>
     </section>
