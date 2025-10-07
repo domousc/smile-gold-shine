@@ -2,9 +2,7 @@ import { AlertCircle, TrendingDown, Users, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const PainPoints = () => {
-  const scrollToOffer = () => {
-    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const checkoutUrl = "https://pay.hub.la/mZKCdzDrl8jZSoAnwsj8";
 
   const pains = [
     {
@@ -61,7 +59,7 @@ const PainPoints = () => {
           <Button 
             variant="gold" 
             size="lg"
-            onClick={scrollToOffer}
+            onClick={() => window.open(checkoutUrl, '_blank')}
             className="text-base"
           >
             Quero dominar a técnica agora

@@ -3,9 +3,7 @@ import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const BeforeAfter = () => {
-  const scrollToOffer = () => {
-    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const checkoutUrl = "https://pay.hub.la/mZKCdzDrl8jZSoAnwsj8";
 
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-card to-background">
@@ -56,7 +54,7 @@ const BeforeAfter = () => {
           <Button 
             variant="gold" 
             size="xl"
-            onClick={scrollToOffer}
+            onClick={() => window.open(checkoutUrl, '_blank')}
           >
             Quero transformar sorrisos assim
           </Button>

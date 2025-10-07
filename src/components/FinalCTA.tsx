@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 
 const FinalCTA = () => {
-  const scrollToOffer = () => {
-    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const checkoutUrl = "https://pay.hub.la/mZKCdzDrl8jZSoAnwsj8";
 
   return (
     <section className="py-20 px-4 bg-primary">
@@ -23,7 +21,7 @@ const FinalCTA = () => {
           <Button 
             variant="gold" 
             size="xl"
-            onClick={scrollToOffer}
+            onClick={() => window.open(checkoutUrl, '_blank')}
             className="text-lg px-12 animate-pulse hover:animate-none"
           >
             Quero me inscrever agora por R$49

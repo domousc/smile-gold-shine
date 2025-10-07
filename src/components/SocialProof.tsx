@@ -2,9 +2,7 @@ import { Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const SocialProof = () => {
-  const scrollToOffer = () => {
-    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const checkoutUrl = "https://pay.hub.la/mZKCdzDrl8jZSoAnwsj8";
 
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-background to-card">
@@ -62,7 +60,7 @@ const SocialProof = () => {
           <Button 
             variant="gold" 
             size="lg"
-            onClick={scrollToOffer}
+            onClick={() => window.open(checkoutUrl, '_blank')}
           >
             Garantir minha vaga agora
           </Button>

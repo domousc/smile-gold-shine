@@ -2,9 +2,7 @@ import { Button } from "@/components/ui/button";
 import bethaniaBanner from "@/assets/bethania-hero.png";
 
 const Hero = () => {
-  const scrollToOffer = () => {
-    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const checkoutUrl = "https://pay.hub.la/mZKCdzDrl8jZSoAnwsj8";
 
   return (
     <section className="relative min-h-[600px] flex items-center justify-center overflow-hidden overflow-x-hidden">
@@ -36,7 +34,7 @@ const Hero = () => {
               <Button 
                 variant="gold" 
                 size="xl" 
-                onClick={scrollToOffer}
+                onClick={() => window.open(checkoutUrl, '_blank')}
                 className="w-full sm:w-auto text-xs sm:text-sm md:text-base px-4 py-3 sm:px-6 sm:py-4 h-auto whitespace-normal leading-tight animate-pulse hover:animate-none shadow-elegant"
               >
                 Quero garantir meu acesso por apenas R$49

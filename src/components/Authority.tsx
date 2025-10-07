@@ -4,9 +4,7 @@ import { Award, Users, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Authority = () => {
-  const scrollToOffer = () => {
-    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const checkoutUrl = "https://pay.hub.la/mZKCdzDrl8jZSoAnwsj8";
 
   return (
     <section className="py-20 px-4">
@@ -89,7 +87,7 @@ const Authority = () => {
             <Button 
               variant="gold" 
               size="lg"
-              onClick={scrollToOffer}
+              onClick={() => window.open(checkoutUrl, '_blank')}
             >
               Quero aprender com a Dra. Bethânia
             </Button>

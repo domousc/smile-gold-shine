@@ -2,9 +2,7 @@ import { BookOpen, Lightbulb, TrendingUp, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Solution = () => {
-  const scrollToOffer = () => {
-    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const checkoutUrl = "https://pay.hub.la/mZKCdzDrl8jZSoAnwsj8";
 
   const benefits = [
     {
@@ -58,7 +56,7 @@ const Solution = () => {
           <Button 
             variant="gold" 
             size="xl"
-            onClick={scrollToOffer}
+            onClick={() => window.open(checkoutUrl, '_blank')}
           >
             Sim, quero esses resultados
           </Button>

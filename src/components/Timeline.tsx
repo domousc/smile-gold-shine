@@ -2,9 +2,7 @@ import { Clock, Play, Zap, TrendingUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Timeline = () => {
-  const scrollToOffer = () => {
-    document.getElementById("oferta")?.scrollIntoView({ behavior: "smooth" });
-  };
+  const checkoutUrl = "https://pay.hub.la/mZKCdzDrl8jZSoAnwsj8";
 
   const steps = [
     {
@@ -89,7 +87,7 @@ const Timeline = () => {
           <Button 
             variant="gold" 
             size="xl"
-            onClick={scrollToOffer}
+            onClick={() => window.open(checkoutUrl, '_blank')}
             className="shadow-elegant"
           >
             Começar minha jornada agora

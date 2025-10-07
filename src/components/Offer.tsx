@@ -48,6 +48,7 @@ const Offer = () => {
             <Button 
               variant="gold" 
               size="xl"
+              onClick={() => window.open("https://pay.hub.la/mZKCdzDrl8jZSoAnwsj8", '_blank')}
               className="w-full sm:w-auto text-lg animate-pulse hover:animate-none"
             >
               Garantir acesso agora por R$49
