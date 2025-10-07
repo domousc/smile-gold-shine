@@ -54,13 +54,13 @@ const Authority = () => {
           </div>
 
           {/* Image Column */}
-          <div className="space-y-6">
+          <div className="grid sm:grid-cols-2 gap-4">
             <div className="relative">
               <div className="absolute inset-0 bg-gold/10 rounded-2xl blur-3xl" />
               <img
                 src={draBethania}
                 alt="Dra. Bethânia Luna no consultório"
-                className="relative rounded-2xl shadow-gold w-full object-cover border border-gold/20"
+                className="relative rounded-2xl shadow-gold w-full h-full object-cover border border-gold/20"
               />
             </div>
             <div className="relative">
@@ -68,7 +68,7 @@ const Authority = () => {
               <img
                 src={bethaniaSpeaking}
                 alt="Dra. Bethânia Luna palestrando internacionalmente"
-                className="relative rounded-2xl shadow-gold w-full object-cover border border-gold/20"
+                className="relative rounded-2xl shadow-gold w-full h-full object-cover border border-gold/20"
               />
               <div className="absolute bottom-4 left-4 right-4 bg-primary/90 backdrop-blur-sm rounded-xl p-3">
                 <p className="text-xs font-semibold text-primary-foreground">
