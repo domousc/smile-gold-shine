@@ -11,11 +11,11 @@ const FinalCTA = () => {
         <div className="space-y-4">
           <h2 className="text-3xl md:text-5xl font-bold leading-tight">
             <span className="bg-gradient-to-r from-gold-dark via-gold to-gold-light bg-clip-text text-transparent">
-              Essa é a sua chance de transformar seus resultados
+              Enquanto você lê isso, outros dentistas estão faturando
             </span>
           </h2>
           <p className="text-xl text-primary-foreground/80">
-            Com um investimento menor do que o valor de uma consulta simples.
+            Eles decidiram investir R$49. Você vai ficar para trás?
           </p>
         </div>
 
@@ -35,7 +35,7 @@ const FinalCTA = () => {
 
         <div className="pt-8 border-t border-primary-foreground/10">
           <p className="text-sm text-primary-foreground/70">
-            Milhares de dentistas já estão faturando mais com essa técnica. Não fique para trás.
+            Cada dia que passa é dinheiro deixado na mesa. Pacientes que você poderia atender estão indo para outros dentistas.
           </p>
         </div>
       </div>
